@@ -15,10 +15,7 @@ public class JBossTestCalculatorClient {
         Properties properties = new Properties();
 
         properties.put(Context.INITIAL_CONTEXT_FACTORY, "org.wildfly.naming.client.WildFlyInitialContextFactory");
-        //properties.put(Context.PROVIDER_URL, "http://localhost:8080/wildfly-services");
         properties.put(Context.PROVIDER_URL, "remote+http://localhost:8080");
-        properties.put(Context.SECURITY_PRINCIPAL, "admin");
-        properties.put(Context.SECURITY_CREDENTIALS, "nccutest");
         InitialContext ic;
         CalculatorRemote calculator = null;
         try
