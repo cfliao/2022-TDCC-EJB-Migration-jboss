@@ -1,5 +1,5 @@
 # EJB20-TomEE8-example
-An simple example of running EJB 2.0 SLSB on TomEE 8
+An simple example of running EJB 2.0 SLSB on JBoss EAP 7.4
 
 Setup steps:
 1. Install JBoss EAP 7.4
