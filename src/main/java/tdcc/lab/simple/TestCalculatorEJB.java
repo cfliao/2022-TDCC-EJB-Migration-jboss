@@ -1,5 +1,4 @@
-import nccu.CalculatorHome;
-import nccu.CalculatorRemote;
+package tdcc.lab.simple;
 
 import javax.ejb.CreateException;
 import javax.naming.Context;
@@ -9,7 +8,7 @@ import javax.rmi.PortableRemoteObject;
 import java.rmi.RemoteException;
 import java.util.Properties;
 
-public class JBossTestCalculatorClient {
+public class TestCalculatorEJB {
 
     public static void main(String[] args) throws RemoteException, CreateException {
         Properties properties = new Properties();
@@ -21,7 +20,7 @@ public class JBossTestCalculatorClient {
         try
         {
             ic = new InitialContext(properties);
-            Object ref = ic.lookup("demoEJB-1.0-SNAPSHOT/CalculatorEJB!nccu.CalculatorHome");
+            Object ref = ic.lookup("ejb20-jboss-1.0-SNAPSHOT/CalculatorEJB!tdcc.lab.simple.CalculatorHome");
             CalculatorHome calculatorHome = (CalculatorHome) PortableRemoteObject
                     .narrow(ref, CalculatorHome.class);
             calculator = calculatorHome.create();

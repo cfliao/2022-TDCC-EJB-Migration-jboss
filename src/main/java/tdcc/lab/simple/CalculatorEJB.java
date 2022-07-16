@@ -1,4 +1,4 @@
-package nccu;
+package tdcc.lab.simple;
 
 import javax.ejb.EJBException;
 import javax.ejb.SessionBean;
@@ -15,7 +15,6 @@ public class CalculatorEJB implements SessionBean {
     }
 
     public int add(int i, int j) {
-        //System.out.println(context.getContextData());
         return i + j;
     }
 

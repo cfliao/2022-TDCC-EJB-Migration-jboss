@@ -1,4 +1,4 @@
-package nccu;
+package tdcc.lab.simple;
 
 import javax.ejb.CreateException;
 import javax.ejb.EJBHome;

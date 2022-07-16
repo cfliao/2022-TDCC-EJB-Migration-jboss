@@ -6,9 +6,17 @@
 	<enterprise-beans>
 		<session>
 			<ejb-name>CalculatorEJB</ejb-name>
-			<home>nccu.CalculatorHome</home>
-			<remote>nccu.CalculatorRemote</remote>
-			<ejb-class>nccu.CalculatorEJB</ejb-class>
+			<home>tdcc.lab.simple.CalculatorHome</home>
+			<remote>tdcc.lab.simple.CalculatorRemote</remote>
+			<ejb-class>tdcc.lab.simple.CalculatorEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>CategorySessionBean</ejb-name>
+			<home>tdcc.lab.ejb2.CategoryServiceHome</home>
+			<remote>tdcc.lab.ejb2.CategoryServiceRemote</remote>
+			<ejb-class>tdcc.lab.ejb2.CategorySessionBean</ejb-class>
 			<session-type>Stateless</session-type>
 			<transaction-type>Container</transaction-type>
 		</session>

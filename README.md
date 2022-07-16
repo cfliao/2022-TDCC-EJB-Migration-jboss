@@ -6,10 +6,10 @@ Setup steps:
 2. Start JBoss EAP 7.4  
 3. Build and deploy using Admin console
 4. Add JBoss EAP/bin/client/jboss-client.jar to the project classpath
-5. Run JBossTestCalculatorClient
+5. Run tdcc.lab.simple.TestCalculatorEJB
 
 The JNDI naming patterns can be obtained in the admin console: Runtime/JNDI/View/Java Contexts/java:jboss/export
-The JNDI name of CalculatorHome is what we should use: demoEJB-1.0-SNAPSHOT/CalculatorEJB!nccu.CalculatorHome
+The JNDI name of CalculatorHome is what we should use: demoEJB-1.0-SNAPSHOT/CalculatorEJB!CalculatorHome
 (The full name after java:jboss/exported/)
 
 Add the following xml segment at the end of .m2/settings.xml; if there is no settings.xml, 
