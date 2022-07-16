@@ -2,7 +2,7 @@
 <ejb-jar id="ejb-jar_ID" version="2.1"
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
-	<display-name>EJB20Demo</display-name>
+	<display-name>EJBDemo</display-name>
 	<enterprise-beans>
 		<session>
 			<ejb-name>CalculatorEJB</ejb-name>
@@ -17,6 +17,13 @@
 			<home>tdcc.lab.ejb2.CategoryServiceHome</home>
 			<remote>tdcc.lab.ejb2.CategoryServiceRemote</remote>
 			<ejb-class>tdcc.lab.ejb2.CategorySessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>CalculatorEJB3</ejb-name>
+			<remote>tdcc.lab.simple.ejb3.Calculator</remote>
+			<ejb-class>tdcc.lab.simple.ejb3.CalculatorEJB</ejb-class>
 			<session-type>Stateless</session-type>
 			<transaction-type>Container</transaction-type>
 		</session>
