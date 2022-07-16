@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="2022-ejb20-jboss" />
+        <module name="2022-TDCC-EJB-Migration-jboss" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="2022-ejb20-jboss" target="1.8" />
+      <module name="2022-TDCC-EJB-Migration-jboss" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
