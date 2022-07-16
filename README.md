@@ -1,5 +1,5 @@
-# EJB20-JBOSS.EAP.74-example
-An simple example of running EJB 2.0 SLSB on JBoss EAP 7.4
+# 2022-TDCC-EJB-Migration-jboss JBOSS.EAP.74-example
+An simple example of running EJB 2.0 SLSB and 3.0 on JBoss EAP 7.4
 
 Setup steps:
 1. Install JBoss EAP 7.4
