@@ -4,8 +4,12 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
-        <datasource-mapping />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping>
+          <factory-entry name="2022-ejb20-jboss" />
+        </datasource-mapping>
         <naming-strategy-map />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>
   </component>
@@ -21,6 +25,38 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jboss-client" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss:jboss-ejb-client-legacy:3.0.3.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.marshalling:jboss-marshalling:2.0.12.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.xnio:xnio-api:3.8.7.SP1-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.remoting:jboss-remoting:5.0.24.SP1-redhat-00001" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.wildfly.common:wildfly-common:1.5.4.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.wildfly.security:wildfly-elytron:1.15.12.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ejb3:jboss-ejb3-ext-api:2.3.0.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:2.0.0.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.3_spec:2.0.0.Final-redhat-00005" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.wildfly:wildfly-naming-client:1.0.14.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.wildfly.client:wildfly-client-config:1.0.1.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.marshalling:jboss-marshalling-river:2.0.12.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.xnio:xnio-nio:3.8.7.SP1-redhat-00001" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.threads:jboss-threads:2.4.0.Final-redhat-00001" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.h2database:h2:2.1.214" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.orm:hibernate-core:6.1.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.persistence:jakarta.persistence-api:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.transaction:jakarta.transaction-api:2.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.hibernate.common:hibernate-commons-annotations:6.0.2.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jboss:jandex:2.4.2.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml:classmate:1.5.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: net.bytebuddy:byte-buddy:1.12.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:3.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:2.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.glassfish.jaxb:jaxb-runtime:3.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.glassfish.jaxb:jaxb-core:3.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.glassfish.jaxb:txw2:3.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.istack:istack-commons-runtime:4.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: jakarta.inject:jakarta.inject-api:2.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.antlr:antlr4-runtime:4.10" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.rmi:jboss-rmi-api_1.0_spec:1.0.6.Final" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.corba:glassfish-corba-omgapi:4.2.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.enterprise:cdi-api:2.0.SP1" level="project" />
@@ -38,6 +74,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
-    <orderEntry type="library" name="jboss-client" level="project" />
   </component>
 </module>
