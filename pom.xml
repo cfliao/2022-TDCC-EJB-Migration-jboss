@@ -17,6 +17,11 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se-core</artifactId>
+            <version>5.0.1.Final</version>
+        </dependency>
+        <dependency>
             <groupId>org.jboss.eap</groupId>
             <artifactId>wildfly-ejb-client-legacy-bom</artifactId>
             <version>7.4.5.GA</version>

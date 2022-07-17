@@ -14,9 +14,9 @@
 		</session>
 		<session>
 			<ejb-name>CategorySessionBean</ejb-name>
-			<home>tdcc.lab.ejb2.CategoryServiceHome</home>
-			<remote>tdcc.lab.ejb2.CategoryServiceRemote</remote>
-			<ejb-class>tdcc.lab.ejb2.CategorySessionBean</ejb-class>
+			<home>tdcc.lab.category.CategoryServiceHome</home>
+			<remote>tdcc.lab.category.CategoryServiceRemote</remote>
+			<ejb-class>tdcc.lab.category.CategorySessionBean</ejb-class>
 			<session-type>Stateless</session-type>
 			<transaction-type>Container</transaction-type>
 		</session>
@@ -24,6 +24,13 @@
 			<ejb-name>CalculatorEJB3</ejb-name>
 			<remote>tdcc.lab.simple.ejb3.Calculator</remote>
 			<ejb-class>tdcc.lab.simple.ejb3.CalculatorEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+		<session>
+			<ejb-name>CategorySessionBeanEJB3</ejb-name>
+			<remote>tdcc.lab.category.ejb3.CategoryService</remote>
+			<ejb-class>tdcc.lab.category.ejb3.CategorySessionBean</ejb-class>
 			<session-type>Stateless</session-type>
 			<transaction-type>Container</transaction-type>
 		</session>

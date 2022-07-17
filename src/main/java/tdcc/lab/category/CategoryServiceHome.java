@@ -1,4 +1,4 @@
-package tdcc.lab.ejb2;
+package tdcc.lab.category;
 
 import javax.ejb.CreateException;
 import javax.ejb.EJBHome;

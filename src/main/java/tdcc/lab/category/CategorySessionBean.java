@@ -1,6 +1,4 @@
-package tdcc.lab.ejb2;
-
-import tdcc.lab.domain.Category;
+package tdcc.lab.category;
 
 import javax.ejb.EJBException;
 import javax.ejb.SessionBean;

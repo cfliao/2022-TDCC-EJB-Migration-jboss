@@ -1,4 +1,4 @@
-package tdcc.lab.domain;
+package tdcc.lab.category;
 
 import lombok.Data;
 

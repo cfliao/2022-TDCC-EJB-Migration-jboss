@@ -1,6 +1,4 @@
-package tdcc.lab.ejb2;
-
-import tdcc.lab.domain.Category;
+package tdcc.lab.category;
 
 import javax.ejb.CreateException;
 import javax.naming.Context;
@@ -22,7 +20,7 @@ public class TestCategoryService {
         try
         {
             ic = new InitialContext(properties);
-            Object ref = ic.lookup("ejb20-jboss-1.0-SNAPSHOT/CategorySessionBean!tdcc.lab.ejb2.CategoryServiceHome");
+            Object ref = ic.lookup("ejb20-jboss-1.0-SNAPSHOT/CategorySessionBean!tdcc.lab.category.CategoryServiceHome");
             CategoryServiceHome categoryServiceHome = (CategoryServiceHome) PortableRemoteObject
                     .narrow(ref, CategoryServiceHome.class);
             categoryService = categoryServiceHome.create();
